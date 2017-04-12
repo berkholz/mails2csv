@@ -46,13 +46,12 @@ args = parser.parse_args()
 
 # reading mailserver settings from ini file
 config = Configuration(args.configfile)
-config.printSettings()
+#config.printSettings()
 
 mailConnection = imaplib.IMAP4_SSL(config.mailservername)
 
 try:
     mailConnection.login(config.mailserverusername, config.mailserverpassword)
-    print "Login success."
 except imaplib.IMAP4.error:
     print "LOGIN FAILED!!! "
     sys.exit(1)
