@@ -1,0 +1,9 @@
+
+[general]
+separator = ;
+
+[mailserver]
+servername = mail.example.com
+serverport = 995
+username = username
+password = secretpassword
