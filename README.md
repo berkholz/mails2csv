@@ -8,14 +8,14 @@ This project ist for reading mails from an imap server via TLS and converting th
 First you have to define the header fields to export. Find this section in the python code:
 ```python
 # varHeaders = ['Return-path', 'Envelope-to', 'Delivery-date', 'Received', 'To', 'Cc', 'From', 'Subject', 'Mime-Version',
-   varHeaders = ['Delivery-date', 'Subject', 'To', 'From']
+varHeaders = ['Delivery-date', 'Subject', 'To', 'From']
 ```
 
 The line which is commented out gives you a brief overview of possible headers. Change the varHeaders variable beneath for your needs and save the python file.
 
 ### create mailserver configuration
 
-Copy the .mails2csv-dist file as .mails2csv to your home directory. Under Unix it would be ~/.mails2csv and for Windows it would be %HOMEPATH%\.mails2csv .
+Copy the .mails2csv-dist file as .mails2csv to your home directory. Under Unix it would be ~/.mails2csv and for Windows it would be %HOMEPATH%\\.mails2csv .
 
 You can use a different file as configuration file while setting the command line option *-c* or *--configfile*.
 
